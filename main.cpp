@@ -15,7 +15,11 @@ int main() {
   classroom.add_student("matthew kutyna", "OOOOOOO");
 
   classroom.add_assignment("Quiz 1", 100);
+  classroom.add_assignment("Homework 1", 20);
 
-  printer.pretty_print(classroom);
+  classroom.enter_grade("kasper kaminski", "Homework 1", 18);
+  classroom.enter_grade("matthew kutyna", "Quiz 1", 70);
+
+  std::cout << printer.pretty_print(classroom);
 
 }

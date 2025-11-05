@@ -23,7 +23,7 @@ std::vector<student> gradebook::get_classroom() {
 
 void gradebook::enter_grade(std::string stuname, std::string aname, int grade) {
     for (int i = 0; i < classroom.size(); i++) {
-        student current_student = classroom[i];
+        student& current_student = classroom[i];
 
         if (current_student.get_name() == stuname) {
             current_student.enter_grade(aname, grade);
