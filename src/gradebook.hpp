@@ -13,5 +13,7 @@ public:
     void add_assignment(const std::string name, const int total);
     void enter_grade(std::string sname, std::string aname, int grade);
     std::vector<student> get_classroom();
+    std::string report();
+    std::string assignment_report(const std::string& aname);
 };
 
